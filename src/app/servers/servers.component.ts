@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent {
+  isAllowed=false;
+  constructor(){
+    setTimeout(()=>{
+      this.isAllowed=true;
+    },2000);
+  }
 
 }
